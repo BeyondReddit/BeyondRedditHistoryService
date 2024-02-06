@@ -51,7 +51,7 @@ public class HistoryDao {
                 String title = postData.substring(postData.indexOf("title=")+6,postData.indexOf(", content="));
 
                // titles.add("tile"+i);
-                historys.add(new HistoryResponse(title,viewdate.get(i)));
+                historys.add(new HistoryResponse(title,viewdate.get(i),postId));
             }
         }
         catch (Exception e){
@@ -102,7 +102,7 @@ public class HistoryDao {
                 String postData = userPost.toString();
                 String title = postData.substring(postData.indexOf("title=")+6,postData.indexOf(", content="));
                // title.add("tile"+i);
-                historys.add(new HistoryResponse(title,viewdate.get(i)));
+                historys.add(new HistoryResponse(title,viewdate.get(i),postId));
             }
         }
         catch (Exception e){

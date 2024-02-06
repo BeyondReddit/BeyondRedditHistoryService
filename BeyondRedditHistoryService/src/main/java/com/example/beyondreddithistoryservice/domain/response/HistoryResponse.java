@@ -8,4 +8,5 @@ import lombok.*;
 public class HistoryResponse {
     private String posttitle;
     private String viewdate;
+    private String postid;
 }
