@@ -1,5 +1,4 @@
 package com.example.beyondreddithistoryservice.domain.response;
-
 import lombok.*;
 @Getter
 @Setter

@@ -1,5 +1,4 @@
 package com.example.beyondreddithistoryservice.domain.entity;
-
 import lombok.*;
 
 import javax.persistence.*;
@@ -21,12 +20,12 @@ public class History {
     private int userId;
 
     @Column(name = "postId")
-    private int postId;
+    private String postId;
 
     @Column(name = "viewDate")
     private String viewDate ;
 
-    public History(int userId,int postId, String viewDate){
+    public History(int userId,String postId, String viewDate){
         this.userId = userId;
         this.postId = postId;
         this.viewDate = viewDate;
