@@ -8,7 +8,7 @@ import com.example.beyondreddithistoryservice.service.remote.AuthServiceFeignCli
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-@CrossOrigin("http://127.0.0.1:5173")
+//@CrossOrigin("http://127.0.0.1:5173")
 @RestController
 @RequestMapping("history-service")
 public class HistoryController {
